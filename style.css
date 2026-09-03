@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #fff8f8;
+    color: #3d3032;
+}
+
+
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+#login {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+
+    width: 100%;
+    max-width: 420px;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.login-box .heart {
+    font-size: 55px;
+}
+
+.login-box h1 {
+    font-size: 42px;
+    margin: 15px 0 10px;
+}
+
+.login-box p {
+    color: #76696b;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #d88b9a;
+}
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 12px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #c96f82;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#error {
+    color: #c94c5f !important;
+}
+
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+#contenido {
+    display: none;
+}
+
+
+/* ========================= */
+/* PORTADA */
+/* ========================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.small-title {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #b46b79;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 10vw, 90px);
+
+    font-weight: normal;
+
+    margin: 20px 0;
+}
+
+.intro {
+    font-size: 20px;
+
+    max-width: 600px;
+
+    line-height: 1.7;
+
+    color: #76696b;
+}
+
+
+/* ========================= */
+/* SECCIONES */
+/* ========================= */
+
+section {
+    padding: 90px 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    text-align: center;
+
+    max-width: 750px;
+}
+
+.mensaje p {
+    font-size: 19px;
+
+    line-height: 1.9;
+}
+
+.subtitulo {
+    text-align: center;
+
+    color: #76696b;
+
+    margin-bottom: 40px;
+}
+
+
+/* ========================= */
+/* GALERÍA */
+/* ========================= */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.galeria img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.02);
+}
+
+.recuerdos > p {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #76696b;
+    margin: 25px 0 50px;
+}
+
+.mensaje-final {
+    text-align: center;
+    margin: 70px 0 40px;
+    padding: 30px 20px;
+}
+
+.mensaje-final h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #5f4b4b;
+}
+
+.mensaje-final p {
+    font-size: 18px;
+    color: #76696b;
+    font-style: italic;
+}
+
+/* ========================= */
+/* FINAL */
+/* ========================= */
+
+.final {
+    text-align: center;
+
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.final .heart {
+    font-size: 60px;
+}
+
+.final h2 {
+    max-width: 700px;
+}
+
+.final p {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+}
+
+.te-quiero {
+    font-size: 30px !important;
+
+    margin-top: 30px;
+}
+
+
+/* ========================= */
+/* MÓVIL */
+/* ========================= */
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria img {
+        height: 220px;
+    }
+
+}
